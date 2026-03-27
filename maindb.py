@@ -19,7 +19,7 @@ def main():
             print()
             print("--- Registration Successful ---")
             print("User ID:", uid)
-            print("1. Take Exam Now")
+            print("1. Take Exam")
             print("2. Go to Main Menu")
             ex_ch = input("Choose option: ")
             
