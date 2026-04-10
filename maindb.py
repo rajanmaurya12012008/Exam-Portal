@@ -30,7 +30,7 @@ def main():
                 
                 # Save score
                 update_score(uid, sc, tot)
-                print("✓ Score saved!")
+                print(" Score saved!")
             
             print()
             
@@ -40,7 +40,7 @@ def main():
             uid, sc, tot = res
             
             if uid:
-                print(f"\nWelcome! Your last score: {sc} / {tot}")
+                print(f"\nWelcome! Your last score is: {sc} / {tot}")
                 
                 print("\n1. Start Exam")
                 print("2. Exit")

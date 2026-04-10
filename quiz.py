@@ -11,7 +11,7 @@ def start_quiz():
             print("Correct!")
             score += 1
         else:
-            print(f"Wrong! Correct answer is {q['answer']}")
+            print(f"Wrong! correct answer is {q['answer']}")
 
     return score, total
 
@@ -28,7 +28,7 @@ def take_exam():
         print(f"Percentage: {percentage:.2f}%")
         
         # Ask for re-exam
-        print("\n1. Re-exam")
+        print("\n1.Wanna Re-exam")
         print("2. Exit to main menu")
         
         choice = input("Choose option: ")
