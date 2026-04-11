@@ -40,7 +40,7 @@ def main():
             uid, sc, tot = res
             
             if uid:
-                print(f"\nWelcome! Your last score is: {sc} / {tot}")
+                print(f"\nWelcome! Your last score: {sc} / {tot}")
                 
                 print("\n1. Start Exam")
                 print("2. Exit")
@@ -54,14 +54,14 @@ def main():
                     update_score(uid, new_sc, new_tot)
                     print(f"\n✓ Score updated! New Score: {new_sc} / {new_tot}")
                 else:
-                    print("Exiting...")
+                    print("Exiting")
             else:
                 print("Login failed.")
             
             print()
             
         elif choice == "3":
-            print("Thank you! Goodbye!")
+            print("Thank you and Goodbye!")
             break
         else:
             print("Invalid choice.")

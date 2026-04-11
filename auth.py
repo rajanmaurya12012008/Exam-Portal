@@ -39,7 +39,7 @@ def login():
     conn.close()
 
     if result:
-        print("Login is Successful")
+        print("Login Successful")
         user_id = result[0]
         score = result[1] if result[1] is not None else 0
         total = result[2] if result[2] is not None else 0
