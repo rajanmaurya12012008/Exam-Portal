@@ -50,7 +50,7 @@ def login():
 
 
 def update_score(user_id, score, total):
-    print(f"Score update attempt: {score}/{total}")
+    print(f"Score Update Attempt: {score}/{total}")
     conn = connect_db()
     cursor = conn.cursor()
     query = "UPDATE users SET score=%s, total=%s WHERE id=%s"
