@@ -42,8 +42,8 @@ def main():
             if uid:
                 print(f"\nWelcome! Your last score: {sc} / {tot}")
                 
-                print("\n1. Start Exam")
-                print("2. Exit")
+                print("\n1. Start exam")
+                print("2. exit")
                 ex_ch = input("choose option: ")
                 
                 if ex_ch == "1":
