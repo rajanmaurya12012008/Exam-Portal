@@ -4,10 +4,10 @@ def register():
     conn = connect_db()
     cursor = conn.cursor()
 
-    roll = input("Enter Roll No: ")
-    username = input("Enter Username: ")
-    email = input("Enter Email: ")
-    password = input("Enter Password: ")
+    roll = input("Enter roll no: ")
+    username = input("Enter username: ")
+    email = input("Enter email: ")
+    password = input("Enter password: ")
 
     query = "INSERT INTO users (roll_no, username, email, password) VALUES (%s, %s, %s, %s)"
     values = (roll, username, email, password)
@@ -20,7 +20,7 @@ def register():
     
     conn.close()
     
-    print("Registration Successful")
+    print("registration successful")
     return user_id, email, password
 
 

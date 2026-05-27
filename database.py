@@ -5,5 +5,6 @@ def connect_db():
         user="root",
         password="rajanmysql",
         database="exam_portal"
+    
     )
 

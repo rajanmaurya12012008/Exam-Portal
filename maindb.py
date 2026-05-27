@@ -6,11 +6,11 @@ def main():
     """Main function to run the exam system"""
     while True:
         print("\n===== Exam Portal =====")
-        print("1. Register")
-        print("2. Login")
-        print("3. Exit")
+        print("1. register")
+        print("2. login")
+        print("3. exit")
         
-        choice = input("Choose option: ")
+        choice = input("choose option: ")
         
         if choice == "1":
             res = register()
@@ -44,27 +44,27 @@ def main():
                 
                 print("\n1. Start Exam")
                 print("2. Exit")
-                ex_ch = input("Choose option: ")
+                ex_ch = input("choose option: ")
                 
                 if ex_ch == "1":
-                    print("Starting exam...")
+                    print("starting exam...")
                     new_sc, new_tot = take_exam()
                     
                     # Update score
                     update_score(uid, new_sc, new_tot)
                     print(f"\n✓ Score updated! New Score: {new_sc} / {new_tot}")
                 else:
-                    print("Exiting")
+                    print("exiting")
             else:
-                print("Login failed.")
+                print("login failed.")
             
             print()
             
         elif choice == "3":
-            print("Thank you and Goodbye!")
+            print("thank you and goodbye!")
             break
         else:
-            print("Invalid choice.")
+            print("invalid choice.")
 
 
 if __name__ == "__main__":

@@ -25,15 +25,15 @@ def take_exam():
         score, total = start_quiz()
         
         print(f"\n--- Result ---")
-        print(f"Your Score: {score} / {total}")
+        print(f"your score: {score} / {total}")
         percentage = (score / total) * 100 if total > 0 else 0
-        print(f"Percentage: {percentage:.2f}%")
+        print(f"%age: {percentage:.2f}%")
         
         # Ask for re-exam
         print("\n1. Wanna Re-exam")
-        print("2. Exit to main menu")
+        print("2. exit to main menu")
         
-        choice = input("Choose option: ")
+        choice = input("choose option: ")
         
         if choice != "1":
             break
