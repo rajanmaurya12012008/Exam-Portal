@@ -21,7 +21,7 @@ def main():
             print("User ID:", uid)
             print("1. Take Exam")
             print("2. Go to Main Menu")
-            ex_ch = input("Choose option: ")
+            ex_ch = input("choose option: ")
             
             if ex_ch == "1":
                 print("Starting exam...")
